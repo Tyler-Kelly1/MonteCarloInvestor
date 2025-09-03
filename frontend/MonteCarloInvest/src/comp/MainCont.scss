@@ -1,0 +1,27 @@
+/* GraphLayout.scss */
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; // center horizontally if desired
+  width: 100%;
+  padding: 20px;
+  gap: 20px; // space between components
+}
+
+.input-bar {
+  width: 100%;
+  max-width: 600px; // optional max width
+}
+
+.graph-container {
+  width: 100%;
+  max-width: 800px; // optional max width
+  height: 400px; // set a height for your chart
+  background-color: rgba($color: #ffffff, $alpha: 0.7);
+}
+
+.stat-box {
+  width: 100%;
+  max-width: 600px;
+}
