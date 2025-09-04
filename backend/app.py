@@ -3,6 +3,7 @@ from flask_cors import CORS  # allow React (different port) to access
 from utils.engine import SimulationConditions
 
 app = Flask(__name__)
+
 CORS(app)  # enable cross-origin requests
 
 @app.route('/calculate', methods=['POST'])
@@ -25,5 +26,7 @@ def calculate():
     # Example calculation
     return base.JSONFY(result, stats)
 
+
+### REMOVE THIS IN PRODUCTION
 if __name__ == '__main__':
     app.run(debug=True, port=5000)
