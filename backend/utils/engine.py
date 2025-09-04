@@ -91,7 +91,7 @@ def testing():
     Tyler = SimulationConditions(0, 500, 0, avgMarket=0.08)
     simDuration = 30
 
-    finalBalances, realFinalBalances, balances, realbalences = monteCarloSim(Tyler, 10000, simDuration)
+    finalBalances, realFinalBalances, balances, realbalences = Tyler.monteCarloSim(100, 20)
     totalInvestment = Tyler.principle + (Tyler.monthlyInv * 12 * simDuration)
 
     print(f"""

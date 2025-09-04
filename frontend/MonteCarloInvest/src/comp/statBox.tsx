@@ -1,6 +1,5 @@
 
 import "./statBox.scss"
-import {useState} from 'react';
 
 interface Stats {
 
@@ -17,9 +16,6 @@ interface Props{
 } 
 
 function StatBox( {stats} : Props) {
-
-    const [result, setResult] = useState<any>(null); 
-    const [loading, setLoading] =  useState<boolean>(false);
 
     // Helper function that checks for null value
     // If it is null display 'N/A'
